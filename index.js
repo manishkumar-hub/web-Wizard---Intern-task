@@ -84,7 +84,8 @@ canvas.on('mouse:wheel', function (opt) {
 
 
 const reset = () => {
-    const delta = new fabric.Point(0, 0)
-    canvas.absolutePan(delta);
     canvas.setZoom(1);
+    var objects = canvas.getObjects();
+    canvas.viewportCenterObjectV(objects[0])
+    canvas.viewportCenterObjectH(objects[0])
 }
