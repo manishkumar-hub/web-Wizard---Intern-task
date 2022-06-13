@@ -1,0 +1,58 @@
+.header
+{
+    text-align: center;
+    color: blueviolet;
+    font-weight: 800;
+    font:bold ;
+    font-size: larger;
+}
+.canva-div {
+    border-radius: 30px;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    
+}
+#canvas
+{
+    border-radius: 30px;
+    border: solid red 2px;
+}
+.wrapper
+{
+    display: flex;
+    padding: 1%;
+}
+#input-div
+{
+    border: solid 2px rgb(55, 7, 106);
+    border-radius: 20px;
+    padding-top: 5%;
+    padding: 5%;
+    text-align: center;
+}
+.btn
+{
+    background-color: rgb(237, 141, 141);
+    border-radius: 4px;
+    font-size: larger;
+    color: black;
+}
+.btn:hover
+{
+    background-color: rgb(239, 54, 54);
+}
+#add-image-text
+{
+    color: blue;
+    font-size: larger;
+    font-size: 40px;
+}
+#upload-img
+{
+    padding-top: 50px;
+    padding-left: 10px;
+    border-radius: 20px;
+    background-color: rgb(188, 197, 175);
+    min-height: 90px;
+}
