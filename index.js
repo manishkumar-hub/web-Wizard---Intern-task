@@ -4,7 +4,7 @@ var canvas = new fabric.Canvas('canvas', {
     height: 600
 })
 var mouseClick = false;
-console.log(canvas)
+// console.log(canvas)
 canvas.on("mouse:down", () => {
     mouseClick = true;
 })
@@ -14,9 +14,9 @@ canvas.on("mouse:up", () => {
 
 const reader = new FileReader();
 const addImage = (e) => {
-    console.log(e);
+    // console.log(e);
     const img = document.getElementById('upload-img').files[0];
-    console.log(img)
+    // console.log(img)
     reader.readAsDataURL(img)
 }
 
@@ -46,7 +46,7 @@ canvas.on('mouse:move', (event) => {
 var mPosX, mPosY;
 canvas.on('mouse:wheel', function (opt) {
     var delta = opt.e.deltaY;
-    console.log(opt.e.clientX)
+    // console.log(opt.e.clientX)
     var zoom = canvas.getZoom();
     zoom *= 0.999 ** delta;
     if (zoom > 20) zoom = 20;
@@ -60,13 +60,13 @@ canvas.on('mouse:wheel', function (opt) {
 
         mPosX = opt.e.clientX;
         mPosY = opt.e.clientY;
-        console.log("while zoomin ", mPosX, mPosY);  
+        // console.log("while zoomin ", mPosX, mPosY);  
         canvas.zoomToPoint({ x: opt.e.offsetX, y: opt.e.offsetY }, zoom);
     }
     else {
 
         if (mPosX == opt.e.clientX && mPosY == opt.e.clientY) {
-            console.log('equ')
+            // console.log('equ')
             canvas.zoomToPoint({ x: opt.e.offsetX, y: opt.e.offsetY }, zoom);
         }
         else {
